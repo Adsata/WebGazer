@@ -2,7 +2,7 @@
 
 WebGazer is an in-browser tool that predicts the user's gaze by analyzing the webcam's video feed. It detects face features using a deep learning model and predicts the gaze by combining multiple features and analyses. Modern hardware makes it possible so do all this on the client's computer so that no personal data gets transmitted to any servers and no video streams are saved.
 
-The following requirements must be met:
+## The following requirements must be met:
 - WebGazer must be able to read the video stream of the webcam using the [MediaDevices API](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices)
 - WebGazer must [tee the stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/tee), creating one stream for predictions and one for the user to see
 - WebGazer must give live (_very_ short delay) feedback if the users face can be detected
@@ -26,3 +26,10 @@ The following requirements must be met:
   - `['click']` recalibrate on clicks
   - `['move']` recalibrate on cursor movement
   - `['click', 'move']` recalibrate on clicks and cursor movement
+
+## General goals:
+- keeping WebGazer and its dependencies up-to-date
+- creating and API suitable for most use cases
+- making WebGazer easy to integrate into modern frameworks like React
+- making predictions more reliable as they are now
+- providing an extensive documentation
