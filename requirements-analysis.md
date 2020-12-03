@@ -26,6 +26,7 @@ WebGazer is an in-browser tool that predicts the user's gaze by analyzing the we
   - `['click']` recalibrate on clicks
   - `['move']` recalibrate on cursor movement
   - `['click', 'move']` recalibrate on clicks and cursor movement
+- Libraries for regession and face detection must be exchangable
 
 ## General goals:
 - keeping WebGazer and its dependencies up-to-date
